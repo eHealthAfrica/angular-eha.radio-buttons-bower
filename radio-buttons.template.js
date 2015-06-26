@@ -6,22 +6,22 @@ angular.module("templates/radio-buttons.template.tpl.html", []).run(["$templateC
     "  <button\n" +
     "    class=\"btn yes\"\n" +
     "    ng-model=\"model\"\n" +
-    "    ng-class=\"model === 'Y' && 'active'\"\n" +
-    "    btn-radio=\"'Y'\"\n" +
+    "    ng-class=\"model === true && 'active'\"\n" +
+    "    btn-radio=\"true\"\n" +
     "  >\n" +
     "    <span\n" +
-    "      ng-class=\"model === 'Y' && 'fa fa-check-circle' || 'fa fa-circle-o'\"\n" +
+    "      ng-class=\"model === true && 'fa fa-check-circle' || 'fa fa-circle-o'\"\n" +
     "      translate\n" +
     "    >Yes</span>\n" +
     "  </button>\n" +
     "  <button\n" +
     "    class=\"btn no\"\n" +
     "    ng-model=\"model\"\n" +
-    "    ng-class=\"model === 'N' && 'active'\"\n" +
-    "    btn-radio=\"'N'\"\n" +
+    "    ng-class=\"model === false && 'active'\"\n" +
+    "    btn-radio=\"false\"\n" +
     "  >\n" +
     "    <span\n" +
-    "      ng-class=\"model === 'N' && 'fa fa-check-circle' || 'fa fa-circle-o'\"\n" +
+    "      ng-class=\"model === false && 'fa fa-check-circle' || 'fa fa-circle-o'\"\n" +
     "      translate\n" +
     "    >No</span>\n" +
     "  </button>\n" +
